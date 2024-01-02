@@ -5,13 +5,8 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+p {
+    text-align: center;
 }
 
 h1, h2 {
@@ -21,17 +16,57 @@ h1, h2 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+span {
+    display: flex;
+    justify-content: space-between;
 }
 
 input {
-    width: 100%;
+    width: 97%;
     padding: 8px;
     margin-bottom: 10px;
 }
 
 button {
+    margin: 5px;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Mengatur margin kiri dan kanan menjadi otomatis */
+    max-width: 50%;
+    height: auto;
+}
+
+.rumus {
+    max-width: 100%;
+    display: none;
+    margin: auto;
+}
+
+#shapeSwitch:checked + .content #id_keliling {
+    display: block;
+}
+
+#shapeSwitch:checked + .content #id_luas {
+    display: block;
+}
+
+.hitung {
     background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.reset {
+    background-color: #ff1808;
     color: #fff;
     padding: 10px;
     border: none;
@@ -45,6 +80,25 @@ button {
     text-align: center;
 }
 
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    display: grid;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
 /* Switch Button Style */
 .switch {
     position: relative;

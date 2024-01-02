@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Hitung Luas</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h1>Hitung Luas Jajargenjang dan Segitiga</h1>
-        
-        <!-- Tambahkan label untuk keterangan switch button -->
-<label for="shapeSwitch">Bentuk:</label>
-<label class="switch">
-    <input type="checkbox" id="shapeSwitch" onclick="toggleShape()">
-    <span class="slider"></span>
-</label>
-<span id="shapeLabel">Segitiga</span> <!-- Tambahkan elemen untuk menampilkan label bentuk -->
+      <h1>Kalkulator Segitiga</h1>
+      <p>
+        Ini adalah sebuah website sederhana untuk menghitung luas dan keliling
+        dari segitiga
+      </p>
 
-        
-        <div id="triangleSection">
-            <h2>Segitiga</h2>
-            <label for="base">Alas:</label>
-            <input type="number" id="base" placeholder="Masukkan alas">
-            
-            <label for="height">Tinggi:</label>
-            <input type="number" id="height" placeholder="Masukkan tinggi">
-        </div>
-        
-        <div id="parallelogramSection" style="display:none;">
-            <h2>Jajargenjang</h2>
-            <label for="basePar">Alas:</label>
-            <input type="number" id="basePar" placeholder="Masukkan alas">
-            
-            <label for="heightPar">Tinggi:</label>
-            <input type="number" id="heightPar" placeholder="Masukkan tinggi">
-        </div>
-        
-        <button onclick="calculateArea()">Hitung Luas</button>
-        
-        <div id="result"></div>
+      <!-- Tambahkan label untuk keterangan switch button -->
+      <div class="center">
+        <label for="shapeSwitch">Switch to :</label>
+        <label class="switch">
+          <input type="checkbox" id="shapeSwitch" onclick="toggleShape()" />
+          <span class="slider"></span>
+        </label>
+        <span id="shapeLabel"></span>
+    </div>
+      <!-- Tambahkan elemen untuk menampilkan label bentuk -->
+
+        <img class="rumus" id="id_keliling" src="img/keliling.png" alt="keliling segitiga">
+        <img class="rumus" id="id_luas" src="img/luas.jpg" alt="luas segitiga">
+
+      <div id="triangleSection">
+        <h2>Luas</h2>
+        <label for="base">Alas:</label>
+        <input type="number" id="base" placeholder="Masukkan alas" />
+
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height" placeholder="Masukkan tinggi" />
+      </div>
+
+      <div id="parallelogramSection" style="display: none">
+        <h2>Keliling</h2>
+        <label for="side1">sisi a :</label>
+        <input type="number" id="side1" placeholder="Masukkan sisi a" />
+    
+        <label for="side2">sisi b :</label>
+        <input type="number" id="side2" placeholder="Masukkan sisi b" />
+    
+        <label for="side3">sisi c :</label>
+        <input type="number" id="side3" placeholder="Masukkan sisi c" />
+    </div>    
+
+    <div class="content">
+      <button id="hitung" onclick="calculateArea()">Hitung</button>
+      <button id="reset" onclick="resetCalculation()">Reset</button>
+    </div>
+      <div id="result"></div>
     </div>
 
     <script src="JS/script.js"></script>
-</body>
+  </body>
 </html>
