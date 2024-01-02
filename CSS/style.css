@@ -5,10 +5,6 @@ body {
     background-color: #f4f4f4;
 }
 
-p {
-    text-align: center;
-}
-
 h1, h2 {
     text-align: center;
     color: #333;
@@ -39,6 +35,30 @@ img {
     margin: 0 auto; /* Mengatur margin kiri dan kanan menjadi otomatis */
     max-width: 50%;
     height: auto;
+}
+
+.p1 {
+    font-size: medium;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p2 {
+    font-size: medium;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+    font-size: medium;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p4 {
+    font-size: medium;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .rumus {

@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var shapeLabel = document.getElementById("shapeLabel");
   var id_keliling = document.getElementById("id_keliling");
   var id_luas = document.getElementById("id_luas");
+  var keterangan_keliling = document.getElementById("keterangan_keliling");
+  var keterangan_luas = document.getElementById("keterangan_luas");
 
   if (shapeSwitch.checked) {
     triangleSection.style.display = "block";
@@ -20,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show parallelogram image, hide triangle image
     id_keliling.style.display = "block";
     id_luas.style.display = "none";
+    keterangan_keliling.style.display = "block";
+    keterangan_luas.style.display = "none";
+    
   }
 });
 
@@ -29,6 +34,8 @@ function toggleShape() {
   var shapeLabel = document.getElementById("shapeLabel");
   var id_keliling = document.getElementById("id_keliling");
   var id_luas = document.getElementById("id_luas");
+  var keterangan_keliling = document.getElementById("keterangan_keliling");
+  var keterangan_luas = document.getElementById("keterangan_luas");
 
   if (document.getElementById("shapeSwitch").checked) {
     triangleSection.style.display = "block";
@@ -38,6 +45,8 @@ function toggleShape() {
     // Show triangle image, hide parallelogram image
     id_keliling.style.display = "none";
     id_luas.style.display = "block";
+    keterangan_keliling.style.display = "none";
+    keterangan_luas.style.display = "block";
   } else {
     triangleSection.style.display = "none";
     parallelogramSection.style.display = "block";
@@ -46,6 +55,8 @@ function toggleShape() {
     // Show parallelogram image, hide triangle image
     id_keliling.style.display = "block";
     id_luas.style.display = "none";
+    keterangan_keliling.style.display = "block";
+    keterangan_luas.style.display = "none";
   }
 
   // Reset hasil perhitungan saat switch button ditekan

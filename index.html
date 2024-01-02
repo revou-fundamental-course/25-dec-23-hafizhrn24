@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1>Kalkulator Segitiga</h1>
-      <p>
+      <p class="center">
         Ini adalah sebuah website sederhana untuk menghitung luas dan keliling
         dari segitiga
       </p>
@@ -23,11 +23,36 @@
           <span class="slider"></span>
         </label>
         <span id="shapeLabel"></span>
-    </div>
+      </div>
       <!-- Tambahkan elemen untuk menampilkan label bentuk -->
 
-        <img class="rumus" id="id_keliling" src="img/keliling.png" alt="keliling segitiga">
-        <img class="rumus" id="id_luas" src="img/luas.jpg" alt="luas segitiga">
+      <img
+        class="rumus"
+        id="id_keliling"
+        src="img/keliling.png"
+        alt="keliling segitiga"
+      />
+      <img class="rumus" id="id_luas" src="img/luas.jpg" alt="luas segitiga" />
+
+      <div id="keterangan_keliling">
+        <p class="p1">Rumus keliling segitiga :</p>
+        <p class="p2">Keliling = a + b + c</p>
+        <p class="p3">Keterangan:</p>
+        <p class="p4">
+          keliling = keliling segitiga<br />a = sisi segitiga a<br />b = sisi
+          segitiga b<br />c = sisi segitiga c
+        </p>
+      </div>
+
+      <div id="keterangan_luas">
+        <p class="p1">Rumus Luas segitiga :</p>
+        <p class="p2">Luas = 1/2 x alas x tinggi</p>
+        <p class="p3">Keterangan:</p>
+        <p class="p4">
+          Luas = Luas segitiga<br />alas = alas segitiga<br />tinggi = tinggi
+          segitiga
+        </p>
+      </div>
 
       <div id="triangleSection">
         <h2>Luas</h2>
@@ -42,18 +67,18 @@
         <h2>Keliling</h2>
         <label for="side1">sisi a :</label>
         <input type="number" id="side1" placeholder="Masukkan sisi a" />
-    
+
         <label for="side2">sisi b :</label>
         <input type="number" id="side2" placeholder="Masukkan sisi b" />
-    
+
         <label for="side3">sisi c :</label>
         <input type="number" id="side3" placeholder="Masukkan sisi c" />
-    </div>    
+      </div>
 
-    <div class="content">
-      <button id="hitung" onclick="calculateArea()">Hitung</button>
-      <button id="reset" onclick="resetCalculation()">Reset</button>
-    </div>
+      <div class="content">
+        <button id="hitung" onclick="calculateArea()">Hitung</button>
+        <button id="reset" onclick="resetCalculation()">Reset</button>
+      </div>
       <div id="result"></div>
     </div>
 
