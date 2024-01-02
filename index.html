@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Hitung Luas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hitung Luas Jajargenjang dan Segitiga</h1>
+        
+        <!-- Tambahkan label untuk keterangan switch button -->
+<label for="shapeSwitch">Bentuk:</label>
+<label class="switch">
+    <input type="checkbox" id="shapeSwitch" onclick="toggleShape()">
+    <span class="slider"></span>
+</label>
+<span id="shapeLabel">Segitiga</span> <!-- Tambahkan elemen untuk menampilkan label bentuk -->
+
+        
+        <div id="triangleSection">
+            <h2>Segitiga</h2>
+            <label for="base">Alas:</label>
+            <input type="number" id="base" placeholder="Masukkan alas">
+            
+            <label for="height">Tinggi:</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi">
+        </div>
+        
+        <div id="parallelogramSection" style="display:none;">
+            <h2>Jajargenjang</h2>
+            <label for="basePar">Alas:</label>
+            <input type="number" id="basePar" placeholder="Masukkan alas">
+            
+            <label for="heightPar">Tinggi:</label>
+            <input type="number" id="heightPar" placeholder="Masukkan tinggi">
+        </div>
+        
+        <button onclick="calculateArea()">Hitung Luas</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
